@@ -1,6 +1,6 @@
 #!/bin/bash
 
-num=80
+num=75
 
 df -h | grep -E '^/dev/' | while read line; do
 	usage=$(echo $line | awk '{print $5}' | tr -d '%')
